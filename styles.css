@@ -1,0 +1,253 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8d1b1, #fcb5a6); /* Soft pastel gradient background */
+    color: #333;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #ff5c8f; /* Bright and vibrant pink */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff69b4;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#home:hover {
+    transform: scale(1.02);
+}
+
+#home h2 {
+    font-size: 3rem;
+    color: #ff5c8f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 1s ease-in-out;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+#home img {
+    width: 80%;
+    max-width: 550px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#home img:hover {
+    transform: scale(1.05);
+}
+
+/* Events Section */
+#events {
+    padding: 60px 20px;
+    background: #ff6fcf;
+    color: white;
+    text-align: center;
+}
+
+#events h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#events ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#events li {
+    background-color: #fff;
+    color: #333;
+    width: 45%;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#events li:hover {
+    transform: translateY(-5px);
+}
+
+#events img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#events img:hover {
+    transform: scale(1.1);
+}
+
+#events button {
+    padding: 12px 25px;
+    background-color: #ff5c8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#events button:hover {
+    background-color: #f7a1f4;
+}
+
+/* Subscribe Section */
+#subscribe {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#subscribe h2 {
+    font-size: 2.5rem;
+    color: #ff5c8f;
+    margin-bottom: 30px;
+}
+
+#subscribe p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+#subscribe form {
+    display: inline-block;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+#subscribe input {
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid #ff5c8f;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#subscribe input:focus {
+    border-color: #f7a1f4;
+    outline: none;
+}
+
+#subscribe button {
+    padding: 15px 40px;
+    background-color: #ff5c8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subscribe button:hover {
+    background-color: #f7a1f4;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 25px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #events ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #events li {
+        width: 80%;
+    }
+
+    #subscribe input {
+        width: 80%;
+    }
+}
